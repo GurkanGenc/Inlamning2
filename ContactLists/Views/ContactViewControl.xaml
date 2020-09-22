@@ -15,7 +15,20 @@
 
             <!--Contact Button Grid-->
             <StackPanel Grid.Column="0" HorizontalAlignment="Center" Background="#FFD7F4AB" Opacity="0.85" Width="200">
-                <Button x:Name="contactButton" Content="Angelina Jolie" Click="contactButton_Click" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" FontSize="18" />
+                <TextBlock Text="Contacts" Padding="20" FontSize="20" FontWeight="DemiBold" Cursor="IBeam" />
+
+                <Button x:Name="contactButton" Content="Angelina Jolie" Click="contactButton_Click"
+                        Background="Transparent" BorderThickness="0,0.1,0,0.1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
+                        FontSize="18" Padding="10" Cursor="Hand" />
+                <Button x:Name="contactButton2" Content="Brad Pitt" Click="contactButton2_Click"
+                        Background="Transparent" BorderThickness="0,0,0,0.1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
+                        FontSize="18" Padding="10" Cursor="Hand" />
+                <Button x:Name="contactButton3" Content="Jennifer Aniston" Click="contactButton3_Click"
+                        Background="Transparent" BorderThickness="0,0,0,0.1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
+                        FontSize="18" Padding="10" Cursor="Hand" />
+                <Button x:Name="contactButton4" Content="Bill Gates" Click="contactButton4_Click"
+                        Background="Transparent" BorderThickness="0,0,0,0.1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
+                        FontSize="18" Padding="10" Cursor="Hand" />
             </StackPanel>
 
             <!--Image and Text Grid-->
@@ -25,6 +38,7 @@
                 <StackPanel Grid.Column="1" Margin="0,95" HorizontalAlignment="Right">
                     <TextBlock x:Name="contactName" FontSize="18" />
                     <TextBlock x:Name="occupation" FontSize="16" />
+                    <TextBlock x:Name="email" FontSize="14" />
                 </StackPanel>
                 
             </StackPanel>

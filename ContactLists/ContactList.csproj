@@ -9,12 +9,21 @@
   <ItemGroup>
     <None Remove="ContactList.png" />
     <None Remove="Images\Angelina_Jolie.jpg" />
+    <None Remove="Images\Bill_Gates.png" />
+    <None Remove="Images\Brad.jpg" />
+    <None Remove="Images\G_Genc.jpg" />
+    <None Remove="Images\G_Genc.jpg~RF394e3b77.TMP" />
+    <None Remove="Images\Jennifer.jpg" />
     <None Remove="Views\Angelina_Jolie.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="ContactList.png" />
     <Resource Include="Images\Angelina_Jolie.jpg" />
+    <Resource Include="Images\Bill_Gates.png" />
+    <Resource Include="Images\Brad.jpg" />
+    <Resource Include="Images\G_Genc.jpg" />
+    <Resource Include="Images\Jennifer.jpg" />
     <Resource Include="Views\Angelina_Jolie.jpg" />
   </ItemGroup>
 

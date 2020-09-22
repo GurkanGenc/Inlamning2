@@ -12,8 +12,16 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" HorizontalAlignment="Center" Background="#FFD7F4AB" Opacity="0.85" Width="200">
-            <Button x:Name="messageButton" Content="From Angelina Jolie" Click="messageButton_Click" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" FontSize="18" />
+        <StackPanel Grid.Column="0" HorizontalAlignment="Center" Background="#FFD7F4AB" Opacity="0.85" Width="200" Cursor="Hand">
+            <TextBlock Text="Messages" Padding="20" FontSize="20" FontWeight="DemiBold" Cursor="IBeam" />
+            <Button x:Name="messageButton" Content="From Angelina Jolie" Click="messageButton_Click"
+                    Background="Transparent" BorderThickness="0,0.1,0,0.1" HorizontalAlignment="Stretch" Padding="10" FontSize="18" HorizontalContentAlignment="Stretch" />
+            <Button x:Name="messageButton2" Content="From Brad Pitt" Click="messageButton2_Click"
+                    Background="Transparent" BorderThickness="0,0.1,0,0.1" HorizontalAlignment="Stretch" Padding="10" FontSize="18" HorizontalContentAlignment="Stretch" />
+            <Button x:Name="messageButton3" Content="From Bill Gates" Click="messageButton3_Click"
+                    Background="Transparent" BorderThickness="0,0.1,0,0.1" HorizontalAlignment="Stretch" Padding="10" FontSize="18" HorizontalContentAlignment="Stretch" />
+            <Button x:Name="messageButton4" Content="From Jennifer Aniston" Click="messageButton4_Click"
+                    Background="Transparent" BorderThickness="0,0.1,0,0.1" HorizontalAlignment="Stretch" Padding="10" FontSize="18" HorizontalContentAlignment="Stretch" />
         </StackPanel>
 
         <Grid Grid.Column="1" Margin="20">
@@ -39,11 +47,6 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <!--<StackPanel Orientation="Horizontal">
-                        <Button x:Name="replyButton" Content="Reply" Margin="5,0" />
-                        <Button x:Name="replyAllButton" Content="Reply All" Margin="5,0" />
-                        <Button x:Name="forwardButton" Content="Forward" Margin="5,0" />
-                    </StackPanel>-->
                     <TextBlock x:Name="time" TextAlignment="Right" Margin="0,5,0,0" />
                 </StackPanel>
                 

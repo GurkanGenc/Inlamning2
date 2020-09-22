@@ -14,7 +14,7 @@
         <DataTemplate x:Name="MessageViewTemplate" DataType="{x:Type models:MessageViewModel}">
             <views:MessageViewControl DataContext="{Binding}" />
         </DataTemplate>
-        
+
         <DataTemplate x:Name="ContactViewTemplate" DataType="{x:Type models:ContactViewModel}">
             <views:ContactViewControl DataContext="{Binding}" />
         </DataTemplate>
@@ -22,40 +22,53 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="175" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Background="#FFAFDA6F" Opacity="0.65">
-            <Button x:Name="messageViewButton" Click="messageViewButton_Click" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left"  FontSize="18" Margin="0,0,0,5" Padding="10,0,0,0">
+            <Image Source="/Images/G_Genc.jpg" Height="80" Width="64" Margin="0,30,0,0" />
+            <TextBlock Text="Gürkan Genç" HorizontalAlignment="Center" Margin="0,0,0,200" FontSize="18" />
+            
+            <Button x:Name="messageViewButton" Click="messageViewButton_Click"
+                    Background="Transparent" BorderThickness="0" HorizontalAlignment="Stretch"  FontSize="18" Margin="0,0,0,5"
+                    Padding="10,0,0,0" HorizontalContentAlignment="Stretch" Cursor="Hand">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE715;" VerticalAlignment="Center" Margin="5" />
                     <TextBlock Text="Messages" />
                 </StackPanel>
             </Button>
 
-            <Button x:Name="contactViewButton" Click="contactViewButton_Click" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" FontSize="18" Margin="0,0,0,5" Padding="10,0,0,0">
+            <Button x:Name="contactViewButton" Click="contactViewButton_Click"
+                    Background="Transparent" BorderThickness="0" HorizontalAlignment="Stretch" FontSize="18" Margin="0,0,0,5"
+                    Padding="10,0,0,0" HorizontalContentAlignment="Left" Cursor="Hand">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE77B;" HorizontalAlignment="Center" FontSize="18" Margin="5" />
                     <TextBlock Text="Contacts" />
                 </StackPanel>
             </Button>
 
-            <Button x:Name="calendarViewButton" Click="calendarViewButton_Click" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" FontSize="18" Margin="0,0,0,5" Padding="10,0,0,0">
+            <Button x:Name="calendarViewButton" Click="calendarViewButton_Click"
+                    Background="Transparent" BorderThickness="0" HorizontalAlignment="Stretch" FontSize="18" Margin="0,0,0,5"
+                    Padding="10,0,0,0" HorizontalContentAlignment="Stretch" Cursor="Hand">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE787;" HorizontalAlignment="Center" FontSize="18" Margin="6" />
                     <TextBlock Text="Calendar" />
                 </StackPanel>
             </Button>
 
-            <Button x:Name="tasksViewButton" Click="tasksViewButton_Click" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" FontSize="18" Margin="0,0,0,5" Padding="10,0,0,0">
+            <Button x:Name="tasksViewButton" Click="tasksViewButton_Click"
+                    Background="Transparent" BorderThickness="0" HorizontalAlignment="Stretch" FontSize="18" Margin="0,0,0,5"
+                    Padding="10,0,0,0" HorizontalContentAlignment="Stretch" Cursor="Hand">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8FD;" HorizontalAlignment="Center" FontSize="18" Margin="7" />
                     <TextBlock Text="Tasks" />
                 </StackPanel>
             </Button>
 
-            <Button x:Name="settingsViewButton" Click="settingsViewButton_Click" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" FontSize="18" Margin="0,0,0,5" Padding="10,0,0,0">
+            <Button x:Name="settingsViewButton" Click="settingsViewButton_Click"
+                    Background="Transparent" BorderThickness="0" HorizontalAlignment="Stretch" FontSize="18" Margin="0,0,0,5"
+                    Padding="10,0,0,0" HorizontalContentAlignment="Stretch" Cursor="Hand">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE713;" HorizontalAlignment="Center" FontSize="18" Margin="7" />
                     <TextBlock Text="Settings" />
