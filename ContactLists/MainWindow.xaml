@@ -8,7 +8,7 @@
         xmlns:views="clr-namespace:ContactLists.Views"
         
         mc:Ignorable="d"
-        Title="Contact List" Height="550" Width="900" MinWidth="800" MinHeight="450" WindowStartupLocation="CenterScreen" Icon="/ContactList.png">
+        Title="Contact List" Height="550" Width="900" WindowStartupLocation="CenterScreen" Icon="/ContactList.png" ScrollViewer.HorizontalScrollBarVisibility="Auto" ResizeMode="NoResize">
 
     <Window.Resources>
         <DataTemplate x:Name="MessageViewTemplate" DataType="{x:Type models:MessageViewModel}">

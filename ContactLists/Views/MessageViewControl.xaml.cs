@@ -37,7 +37,7 @@ namespace ContactLists.Views
         private void messageButton2_Click(object sender, RoutedEventArgs e)
         {
             time.Text = DateTime.Now.ToString();
-            subject.Text = "Don\'t tell Angie nothing!!";
+            subject.Text = "Don\'t tell Angie anything!!";
             from.Text = "Brad Pitt";
             to.Text = "babyface@msn.com";
             body.Text = "Mauris scelerisque, ligula vitae rhoncus consectetur, nibh risus posuere est, vel posuere nibh elit ac magna. Ut lobortis ipsum sem. In aliquet nibh ac felis eleifend dapibus. In sit amet tincidunt risus. Maecenas luctus est non mi sodales efficitur. Fusce nec est.";
